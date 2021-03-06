@@ -433,6 +433,7 @@ table{
   @include media-query($on-palm){
     display:flex;
     flex-direction:column;
+    padding-left:35px;
     
   }
 }
