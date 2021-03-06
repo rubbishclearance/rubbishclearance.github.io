@@ -1,0 +1,79 @@
+---
+descriptionL: adikeih and kebabi portofolio, photos and videos
+title: Photos
+layout: page
+---
+
+<div class="display-section">
+   
+
+    <div id="links">
+        <div class="first-row">
+            <a href="/assets/Images/Services/Edited/BuilderW.png">
+                <img src="/assets/Images/Services/Edited/BuilderW.png">
+            </a>
+            <a href="/assets/Images/Services/Edited/house-clearance.png">
+                <img src="/assets/Images/Services/Edited/house-clearance.png">
+            </a>
+            <a href="/assets/Images/Services/Edited/officeC.png">
+                <img src="/assets/Images/Services/Edited/officeC.png">
+            </a>
+        </div>
+       
+       
+        
+    </div>
+
+    <div
+  id="blueimp-gallery"
+  class="blueimp-gallery"
+  aria-label="image gallery"
+  aria-modal="true"
+  role="dialog"
+>
+  <div class="slides" aria-live="polite"></div>
+  <h3 class="title"></h3>
+  <a
+    class="prev"
+    aria-controls="blueimp-gallery"
+    aria-label="previous slide"
+    aria-keyshortcuts="ArrowLeft"
+    >‹</a
+  >
+  <a
+    class="next"
+    aria-controls="blueimp-gallery"
+    aria-label="next slide"
+    aria-keyshortcuts="ArrowRight"
+    >›</a
+  >
+  <a
+    class="close"
+    aria-controls="blueimp-gallery"
+    aria-label="close"
+    aria-keyshortcuts="Escape"
+    >×</a
+  >
+  <a
+    class="play-pause"
+    aria-controls="blueimp-gallery"
+    aria-label="play slideshow"
+    aria-keyshortcuts="Space"
+    aria-pressed="false"
+    role="button"
+  ></a>
+  <ol class="indicator"></ol>
+</div>
+</div>
+
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event
+        var target = event.target || event.srcElement
+        var link = target.src ? target.parentNode : target
+        var options = { index: link, event: event }
+        var links = this.getElementsByTagName('a')
+        blueimp.Gallery(links, options)
+    }
+</script>
+

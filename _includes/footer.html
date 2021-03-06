@@ -1,0 +1,52 @@
+<div id="footer">
+   <div class="container">
+   	<div class="row">
+   	<div class="col-md-4 col-sm-6">
+<div class="textwidget"><h3>Rubbish Clearance</h3>
+<p> our team understands the importance of a healthy and sustainable environment to live. 
+    Rubish is not only limited to homes, even other commercial areas and offices has rubish to dispose as well.
+    We offer the best and cheapest rubbish clearance service accross london.
+   </p>
+</div>
+   	</div>
+   	<div class="col-md-4 col-sm-6">
+      <h3 class="quick-link-header">Quick Links</h3>
+      <div class="menu-quick-link">
+
+         <ul>
+
+      
+        {% for page in site.pages %}
+          {% if page.title %}
+           <li>
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{ page.title }}</a>
+           </li>
+          {% endif %}
+        {% endfor %}
+    
+
+         </ul>
+      </div>
+   	</div>
+   	<div class="col-md-4 col-sm-6">
+         <h3 class="quick-link-header">Contact Info</h3>
+         <div class="contact-info-footer">
+          <ul>
+				<li><i class="fa fa-phone size"></i><a href="tel:+447944861701">07944861701 </a></li>
+            <li><i class="fa fa-envelope mail"></i><a href="mailto:futsumtedla@cloud.com"> Contact us </a></li>
+				<li><i class="fa fa-map-marker size" style="font-size:19px;position:relative;top:1px;left:2px"></i> London, England</li>
+          </ul>
+         </div>
+   	</div>
+
+   </div>
+   <div class="row">
+  
+      &copy; {{site.time | date: '%Y'}}. All rights reserved.
+  </div>
+   </div>
+   
+      
+ 
+
+</div>
