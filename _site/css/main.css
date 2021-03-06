@@ -446,7 +446,7 @@ table { table-layout: fixed; width: 100%; }
 
 @media screen and (max-width: 700px) { .first-row { display: flex; flex-direction: column; } }
 
-.coverage-section { padding-bottom: 50px; }
+.coverage-section { padding-bottom: 50px; padding-left: 20px; }
 
 .display-section { margin: 10px; }
 
